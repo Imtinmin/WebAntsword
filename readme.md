@@ -2,9 +2,12 @@
 
 参考了一点：https://github.com/iceyhexman/WCnife
 
+本项目地址：https://github.com/Imtinmin/WebAntsword
+
 ## 脚本语言
 python3 flask
-
+bootstrap 4.3
+jquery(不一定用)
 ## 功能
 连接webshell(eval马)
 写入文件，删除文件，能查看目录结构，显示权限，能切换目录
