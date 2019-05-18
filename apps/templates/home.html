@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% block body_block %}
+<div class="container">
+    <div class="place1"></div>
+<div class="alert alert-info" role="alert">
+  scandir接口   /api/scandir?dir=<br>
+  readfile接口  /api/readfile?filename=
+</div>
+</div>
+<div class="place"></div>
+    <br>
+    <h1 class="text-center">Web中国蚁剑</h1>
+    <div class="container" align="center">
+    
+    <div class="place"></div>
+      <form method="post" action="/login" class="text-center" style="width: 50%;">
+       <div class="form-group">
+                <input type="url" class="form-control" name="url" placeholder="http://">
+            </div>
+            <div class="form-group">
+                <input type="text" class="form-control" name="pwd" placeholder="密码">
+            </div>
+            <button type="submit" id="test" class="btn btn-primary" onclick="change()">连接</button>
+
+      </form>
+    </div>
+    </div>
+<script type="text/javascript">
+function change(){
+    var a = document.getElementById('test');
+    var s = document.createElement("span");
+    s.innerHTML = "Loading"; //点击就增加Loading字样
+    a.appendChild(s);
+}
+</script>
+{% endblock %}
